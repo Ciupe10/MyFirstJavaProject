@@ -10,9 +10,9 @@ public class Main {
         System.out.println("Mihai");
 
     // Sum of two numbers
-        int num1 = 456;
-        int num2 = 4356;
-        int sum = num1+num2;
+       int num1 = 456;
+       int num2 = 4356;
+       int sum = num1+num2;
         System.out.println("2. Suma numerelor 456 si 4356 este " + sum);
 
     // Dividing two numbers
@@ -21,7 +21,7 @@ public class Main {
         System.out.println("3. Rezultatul impartirii este " + num3/num4);
 
         int num5 = 5;
-        double num6 = 3.12;
+        double num6 = 3;
         System.out.println("Rezultatul impartirii este " + num5/num6);
 
     // The result of following operations
@@ -40,15 +40,21 @@ public class Main {
         System.out.println("b." + res1);
 
     //c.
-        int num12 = 20;
-        int num13 = -3;
-        int num14 = num5;
-        int res2= num12+num13*num14/num8;
+        double num12 = 20;
+        double num13 = -3;
+        double num14 = 5;
+        double num15 = 8;
+        double res2= num12+num13*num14/num15;
         System.out.println("c." + res2);
 
     //d.
-        
-
+        double num16 = 5;
+        double num17 = 15;
+        double num18 = 3;
+        double num19 = 2;
+        double num20 = 8;
+        double res3 = num16+num17/num18*num19-num20%num18;
+        System.out.println("d." + res3);
 
 
 
