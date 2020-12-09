@@ -6,8 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-
-     System.out.println("1. Hello");
+        System.out.println("1. Hello");
         System.out.println("Mihai");
 
     // Sum of two numbers
@@ -56,11 +55,5 @@ public class Main {
         double num20 = 8;
         double res3 = num16+num17/num18*num19-num20%num18;
         System.out.println("d." + res3);
-
-
-
-
-
-
     }
 }
