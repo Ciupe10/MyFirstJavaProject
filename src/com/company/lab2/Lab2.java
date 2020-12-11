@@ -48,7 +48,7 @@ public class Lab2 {
         return ((y*t*r)/e);
     }
 
-    static String java = "   J    a   v     v  a\n   J   a a   v   v  a a  \n";
+    static String java = "   J    a   v     v  a\n   J   a a   v   v  a a  \nJ  J  aaaaa   V V  aaaaa \n JJ  a     a   V  a     a";
 }
 
 
