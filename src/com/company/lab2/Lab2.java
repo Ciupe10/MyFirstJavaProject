@@ -34,8 +34,8 @@ public class Lab2 {
 
         System.out.println("Inch to meter:" + iToM(3));
 
-       speed(90.0,0,1,30);
-
+        //Asa se apeleaza o metoda void
+        speed(90.0,0,1,30);
 
     }
 

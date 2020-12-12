@@ -3,19 +3,49 @@ package com.company.lab2.AnimalRescue;
 public class AnimalGame {
     public static void main(String[] args) {
         createAnimal();
+        createRecreationalactivity();
+        createRescuer();
+
     }
 
     static void createAnimal() {
-        Animal cat = new Animal("Mitzi", 23, 7);
+        Animal cat = new Animal("Mitzi", 23, 7, 4,8,"Whiskas", "running");
         Animal dog = new Animal();
+        Animal monkey = new Animal("mimi", 12,8,7,8,"bananas","running");
 
+        cat.setHealthy(43);
         cat.describe();
         dog.describe();
 
-        cat.setHappines(6);
+        cat.setHungrylevel(13);
+        cat.setHealthy(7);
+        cat.setHappines(16);
         cat.describe();
 
         dog.setHappines(99);
         dog.describe();
+
+        monkey.describe();
+        monkey.setName("Kiti");
+        monkey.describe();
+        monkey.getHappines();
     }
+    static void createRecreationalactivity(){
+        RecreationalActivity running = new RecreationalActivity("Run");
+        RecreationalActivity toys = new RecreationalActivity("toy");
+
+        running.describe();
+        toys.describe();
+
+        System.out.println("This recreational activity name is: " + running.getName());
+    }
+
+    static void createRescuer(){
+        String Jon = "Jon";
+        Rescuer John = new Rescuer(Jon, 23.0);
+
+        John.describe();
+
+    }
+
 }
