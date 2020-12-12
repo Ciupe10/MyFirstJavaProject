@@ -1,5 +1,8 @@
 package com.company.lab2;
 
+
+import java.text.DecimalFormat;
+
 public class Lab2 {
 
     public static void main(String[] args) {
@@ -21,6 +24,19 @@ public class Lab2 {
         System.out.println(m);
 
         System.out.println(java);
+
+        System.out.println(robot);
+
+        double rest = rst(10, 8);
+        System.out.println(rest);
+
+        System.out.println("Farenheit to Celsius:" + fToC (45 ));
+
+        System.out.println("Inch to meter:" + iToM(3));
+
+       speed(90.0,0,1,30);
+
+
     }
 
 
@@ -49,7 +65,42 @@ public class Lab2 {
     }
 
     static String java = "   J    a   v     v  a\n   J   a a   v   v  a a  \nJ  J  aaaaa   V V  aaaaa \n JJ  a     a   V  a     a";
+
+    static String robot = "  +\"\"\"\"\"+ \n [| o o |] \n  |  ^  |\n  | '-' | \n  +-----+ ";
+
+    static double rst(double p, double o){
+        return p%o;
+    }
+
+//    C = 5/9 * (F -32)
+    static double fToC (double farenheit){
+        double celsius = 5/9.0 * (farenheit-32);
+        return celsius;
+    }
+
+    static double iToM(double inch){
+        double meter = inch/39.37;
+        DecimalFormat df = new DecimalFormat("#.####");
+        String meterString = df.format(meter);
+        System.out.println(meterString);
+        System.out.println(meter);
+        double result = Double.valueOf(meterString);
+        return result;
+    }
+
+    static void speed(double distance,int hour, int minutes, int seconds){
+        double mps = distance/((hour*3600)+(minutes*60)+seconds);
+        System.out.println("Meter per second:" + mps);
+        double kph = mps * 3.6;
+        System.out.println("Km per Hour: " + kph);
+        double milesph = kph / 1.609;
+        System.out.println("Miles per hour:" + milesph);
+
+    }
+
+
 }
+
 
 
 
