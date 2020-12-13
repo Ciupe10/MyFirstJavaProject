@@ -20,7 +20,7 @@ public class Lab2 {
 
         printMyName();
 
-        float m = media(34, 45, 23, 3);
+        float m = media(3, 4, 3);
         System.out.println(m);
 
         System.out.println(java);
@@ -32,7 +32,7 @@ public class Lab2 {
 
         System.out.println("Farenheit to Celsius:" + fToC (45 ));
 
-        System.out.println("Inch to meter:" + iToM(3));
+        System.out.println("Inch to meter:" + iToM(5));
 
         //Asa se apeleaza o metoda void
         speed(90.0,0,1,30);
@@ -60,8 +60,8 @@ public class Lab2 {
         System.out.println("Hello \nMihai");
     }
 
-    static float media(float y, float t, float r, float e){
-        return ((y*t*r)/e);
+    static float media(float y, float t, float r){
+        return ((y+t+r)/3);
     }
 
     static String java = "   J    a   v     v  a\n   J   a a   v   v  a a  \nJ  J  aaaaa   V V  aaaaa \n JJ  a     a   V  a     a";

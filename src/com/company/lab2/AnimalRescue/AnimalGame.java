@@ -5,6 +5,8 @@ public class AnimalGame {
         createAnimal();
         createRecreationalactivity();
         createRescuer();
+        createVet();
+        createFood();
 
     }
 
@@ -46,6 +48,18 @@ public class AnimalGame {
 
         John.describe();
 
+    }
+
+    static void createVet(){
+        Vet Bob = new Vet("Bob","Dogs" );
+
+        Bob.describe();
+    }
+
+    static void createFood(){
+        Food Cat = new Food("Whyskas",23.4,134,true);
+
+        Cat.describe();
     }
 
 }

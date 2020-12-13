@@ -32,6 +32,6 @@ public class Rescuer {
     }
 
     public void describe(){
-        System.out.println("Rescuer name is: " + this.name + "and he has this amount of money" + this.amountOfMoney);
+        System.out.println("Rescuer name is: " + this.name + "-and he has this amount of money" + this.amountOfMoney);
     }
 }
