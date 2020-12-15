@@ -68,12 +68,12 @@ public class Food {
         this.stock = stock;
     }
 
-//    private boolean availability(boolean availability) {
-//        if (stock > amount) ;
-//        {
-//            return true; // return success
-//        } else {
-//            return false; // return failure
-//        }
-//    }
+    public boolean availability(boolean availability) {
+        if (stock > amount)
+        {
+            return true; // return success
+        } else {
+            return false; // return failure
+        }
+    }
 }
