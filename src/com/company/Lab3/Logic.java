@@ -1,5 +1,7 @@
 package com.company.Lab3;
 
+import java.util.Collections;
+
 public class Logic {
 
 
@@ -142,6 +144,8 @@ public class Logic {
 
     }
 
+
+
     public String ascendingOrder (double m, double n) {
         if (m < n) {
             return "Ordinea numerelor este:" + m + ", " + n;
@@ -153,6 +157,20 @@ public class Logic {
     }
 
 
+    public double min (double r,double t, double y) {
+        if (r < t && r < y) {
+            return r;
+        }else if ( t < r && t < y ) {
+            return t ;
+        }else if ( y < r && y < t ); {
+        } return y;
+    }
+
+//    public String maxAndMin ( int z,int x, int c){
+//
+//        return  Collections. max(maxAndMin(75,45,22))  ;
+//
+//    }
 
 }
 

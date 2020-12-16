@@ -115,7 +115,7 @@ public class Lab3 {
 //   Apelati metoda in main() pentru a verifica daca functioneaza.
 
 
-//        System.out.println(logic.biggestNumber(12897,987,12898));
+//        System.out.println(logic.biggestNumber(12897,-987,12898));
 
 
 //        Se citeste un numar, sa se afiseze patratul acestuia (x^2)
@@ -126,5 +126,9 @@ public class Lab3 {
 
 //        System.out.println(logic.ascendingOrder(-45,45));
 
-    }
+////        Sa se afiseze minimul
+//        System.out.println(logic.min(3.8,4.3,3.7));
+
+
+   }
 }
