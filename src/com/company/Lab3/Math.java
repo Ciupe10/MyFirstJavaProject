@@ -18,4 +18,10 @@ public class Math {
     public int minus(int z, int x) {
         return (z - x);
     }
+
+
+
+
+
+
 }

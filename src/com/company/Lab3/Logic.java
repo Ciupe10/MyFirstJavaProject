@@ -63,7 +63,7 @@ public class Logic {
             return "The number is equal to 4";
         } else if (w < 3) {
             return "The number is lower than 3";
-        }else {
+        } else {
             return " ";
         }
     }
@@ -103,10 +103,11 @@ public class Logic {
     public boolean isNumberEven(int number2) {
 
 
-      if ((number2 % 2) == 0) {
+        if ((number2 % 2) == 0) {
             return true;
         } else {
-            return false; }
+            return false;
+        }
 
     }
 
@@ -117,8 +118,8 @@ public class Logic {
 //     Daca varsta e peste 18, sa se returneze true iar daca nu, sa returneze false.
 //     Apelati metoda in main() pentru a verifica daca functioneaza.
 
-    public boolean isEligibleToVote (double k){
-        if ( k > 18) {
+    public boolean isEligibleToVote(double k) {
+        if (k > 18) {
             return true;
         } else {
             return false;
@@ -130,10 +131,28 @@ public class Logic {
 // Apelati metoda in main() pentru a verifica daca functioneaza.
 
 
-    public int biggestNumber ( int j,int h, int g){
-        System.out.println();
+    public int biggestNumber(int j, int h, int g) {
+        if (j > h && j > g) {
+            return j;
+        } else if (h > j && h > g) {
+            return h;
+        } else {
+            return g;
+        }
 
     }
+
+    public String ascendingOrder (double m, double n) {
+        if (m < n) {
+            return "Ordinea numerelor este:" + m + ", " + n;
+        } else if (n < m ) {
+            return "Ordinea numerelor este:" + n + "," + m;
+        }else {
+            return " ";
+        }
+    }
+
+
 
 }
 

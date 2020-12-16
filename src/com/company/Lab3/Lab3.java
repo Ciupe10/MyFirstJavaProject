@@ -1,5 +1,7 @@
 package com.company.Lab3;
 
+import java.math.MathContext;
+
 public class Lab3 {
 
     public static void main(String[] args) {
@@ -22,11 +24,8 @@ public class Lab3 {
         int resMulti = multiplicationOperator.multiplication(a,b);
 //        System.out.println(resMulti);
 
-        Math minusOperator = new Math();
         int resMinus = divideOperator.minus(a,b);
 //        System.out.println(resMinus);
-
-
 
 
 
@@ -116,8 +115,16 @@ public class Lab3 {
 //   Apelati metoda in main() pentru a verifica daca functioneaza.
 
 
+//        System.out.println(logic.biggestNumber(12897,987,12898));
 
 
+//        Se citeste un numar, sa se afiseze patratul acestuia (x^2)
+
+//        System.out.println(java.lang.Math.pow(45,2));
+
+//      Se citesc doua numere, sa se ordoneze crescator
+
+//        System.out.println(logic.ascendingOrder(-45,45));
 
     }
 }
