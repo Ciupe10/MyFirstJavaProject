@@ -11,26 +11,52 @@ public class AnimalGame {
     }
 
     static void createAnimal() {
-        Animal cat = new Animal("Mitzi", 23, 7, 4,8,"Whiskas", "running");
-        Animal dog = new Animal();
-        Animal monkey = new Animal("mimi", 12,8,7,8,"bananas","running");
+//        Animal cat = new Animal("Mitzi", 23, 7, 4,8,"Whiskas", "running");
+//        Animal dog = new Animal();
+//        Animal monkey = new Animal("mimi", 12,8,7,8,"bananas","running");
+//
+//        cat.setHealthy(43);
+//        cat.describe();
+//        dog.describe();
+//
+//        cat.setHungrylevel(13);
+//        cat.setHealthy(7);
+//        cat.setHappines(16);
+//        cat.describe();
+//
+//        dog.setHappines(99);
+//        dog.describe();
+//
+//        monkey.describe();
+//        monkey.setName("Kiti");
+//        monkey.describe();
+//        monkey.getHappines();
 
-        cat.setHealthy(43);
-        cat.describe();
-        dog.describe();
+        Cat Mikey = new Cat();
+        Mikey.setAge(9);
+        Mikey.setFavoritefood("Whiskas");
+        Mikey.setName("Mikey");
+        Mikey.eat();
+        Mikey.setHappines(7);
+        Mikey.setHungrylevel(6);
+        Mikey.setFavoriterecreationalactivity("Running");
+        Mikey.describe();
 
-        cat.setHungrylevel(13);
-        cat.setHealthy(7);
-        cat.setHappines(16);
-        cat.describe();
+        Horse ducky = new Horse();
+        ducky.setName("Ducky");
+        ducky.describe();
 
-        dog.setHappines(99);
-        dog.describe();
+        PetVet Jon = new PetVet();
+        Jon.setNameV("Jon");
+        Jon.setSpecializationV("Dog specialization");
+        Jon.describe();
 
-        monkey.describe();
-        monkey.setName("Kiti");
-        monkey.describe();
-        monkey.getHappines();
+
+
+
+
+
+
     }
     static void createRecreationalactivity(){
         RecreationalActivity running = new RecreationalActivity("Run");
