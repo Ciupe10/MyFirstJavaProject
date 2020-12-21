@@ -40,8 +40,41 @@ public class lab4 {
 
 //  Media numbers to 100
 
-        System.out.println(logic.getMedia(48));
+//        System.out.println(logic.getMedia(48)); Neterminat
 
+
+
+
+
+//  Print to 100
+
+        While aWhile = new While();
+
+//        aWhile.printToOneHundred(23);
+
+//  Print to -100
+
+//        aWhile.countToMinus(123);
+
+//  Count x to y
+
+//        aWhile.countXToY(245,44);
+
+//  Count Ascending
+
+//        aWhile.countAscending(333,45);
+
+//  Even number 1 to 100
+
+//        aWhile.evenNumber();
+
+//  Odd number 1 to 100
+
+//        aWhile.oddNumber();
+
+//  Fibonacci
+
+        aWhile.fibonacci();
 
 
 
