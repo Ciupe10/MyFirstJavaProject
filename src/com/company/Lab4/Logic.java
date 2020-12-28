@@ -121,12 +121,19 @@ public class Logic {
 // pornind de la numarul primit ca si parametru, si sa calculeze media numerelor. La final, metoda sa returneze media.
 // Apelati metoda in clasa Main, metoda main() pentru a verifica daca functioneaza.
 
-    public int getMedia(int first ) {
-        int media = 0;
-        for (int i = first; i <= 100; i++) {
-            media = (i + media) / 2;
+    public double getMedia(double first ) {
+        double rez = 0;
+        int j = 0;
+
+        for (double i = first; i <= 100; i++) {
+            rez += i;
+            j++;
+
         }
-        return media;
+        System.out.println(j);
+        System.out.println(rez);
+        double c = rez/j;
+        return c;
     }
 
 

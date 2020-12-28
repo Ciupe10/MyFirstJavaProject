@@ -40,7 +40,7 @@ public class lab4 {
 
 //  Media numbers to 100
 
-//        System.out.println(logic.getMedia(48)); Neterminat
+        System.out.println(logic.getMedia(99));
 
 
 
@@ -74,7 +74,16 @@ public class lab4 {
 
 //  Fibonacci
 
-        aWhile.fibonacci();
+//        aWhile.fibonacci();
+
+//  Sum 111-8899
+
+//        aWhile.getSum();
+
+//  media nr divizibile cu 7
+
+//        System.out.println(aWhile.between(6,15));
+
 
 
 
