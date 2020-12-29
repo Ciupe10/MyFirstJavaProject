@@ -157,6 +157,76 @@ public class While {
     }
 
 
+//10. Creati o metoda numita CozaLozaWoza.
+//
+//Metoda va afisa:
+//
+//- numerele de la 1 la 110
+//
+//- 11 numere pe linie
+//
+//- se va afisa Coza pentru numerele care sunt multiplu de 3 (1 2 Coza 4)
+//
+//- se va afisa Loza pentru numerele care sunt multiplu de 5 (2 3 4 Loza 6)
+//
+//- se va afisa Woza pentru numerele care sunt multiplu de 7 (4 5 6 Woza 8)
+//
+//- se va afisa CozaLoza pentru numerele care sunt multiplu de 3 SI 5
+//
+//- se va afisa CozaWoza pentru multiplu de 3 SI 7
+//
+//- se va afisa WozaLoza pentru multiplu de 5 SI 7
+//
+//- se va afisa CozaLozaWoza pentru multiplu de 3 SI 5 SI 7
+//
+//Ar trebui sa arate similar:
+//
+//1 2 Coza 4 Loza Coza Woza 8 Coza Loza 11
+//
+//Coza 13 Woza CozaLoza 16 17 Coza 19 Loza CozaWoza 22
+//
+//23 Coza Loza 26 Coza Woza 29 CozaLoza 31 32 Coza
+//
+//
+//......
+
+    public void coza () {
+        int number = 1;
+        while (number <= 110) {
+
+//      number % 3 == 0 => Coza
+//      number % 5 == 0 => Loza
+//      number % 7 == 0 => Woza
+//      number % 3==0 && number % 5 == 0 => CozaLoza
+//      number % 3 == 0 && number % 7 == 0 => CozaWoza
+//      numer % 5 == 0 && number % 7 == 0 => WozaLoza
+//      number % 3 == 0 && number % 7 == 0 && number % 5 == 0 => CozaLozaWoza
+
+            if (number % 3 == 0 && number % 7 == 0 && number % 5 == 0){
+                System.out.print("CozaLozaWoza"+ " ");
+            } else if ( number % 5 == 0 && number % 7 == 0){
+                System.out.print("WozaLoza" + " ");
+            } else if ( number % 3 == 0 && number % 7 == 0) {
+                System.out.print("CozaWoza" + " ");
+            }else if ( number % 3 == 0 && number % 5 == 0){
+                System.out.print("CozaLoza" + " ");
+            }else if ( number % 7 == 0) {
+                System.out.print("Woza" + " ");
+            }else if ( number % 5 == 0 ) {
+                System.out.print("Loza" + " ");
+            } else if ( number % 3 == 0) {
+                System.out.print("Coza" + " ");
+            }else {
+                System.out.print(number + " ");
+            }
+
+            if (number % 11 == 0){
+                System.out.println();
+            }
+
+            number++;
+        }
+    }
 
 
 }

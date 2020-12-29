@@ -40,7 +40,12 @@ public class lab4 {
 
 //  Media numbers to 100
 
-        System.out.println(logic.getMedia(99));
+//        System.out.println(logic.getMedia(99));
+
+
+//   9.Asterix
+
+//        logic.asterix();
 
 
 
@@ -83,6 +88,11 @@ public class lab4 {
 //  media nr divizibile cu 7
 
 //        System.out.println(aWhile.between(6,15));
+
+//        CozaLozaWoza
+
+
+//        aWhile.coza();
 
 
 

@@ -137,5 +137,47 @@ public class Logic {
     }
 
 
+//    9. Creat o metoda in clasa LogicalOp care sa afiseze urmatorul tipar:
+//
+//
+//*******
+//
+//******
+//
+//*****
+//
+//****
+//
+//***
+//
+//**
+//
+//*
+//
+//Cateva mentiuni:
+//- pentru a putea rezolva problema, trebuie folosite doua bucle for. O bucla se va construi in alta bucla.
+//
+//- prima bucla for se va ocupa de afisarea pe orizontala, si cealalta pe verticala
+//
+//- semnul asterisk (*) se poate afisa sub forma de string
+//
+//Apelati metoda in clasa Main, metoda main() pentru a verifica daca functioneaza.
+
+    public void asterix () {
+
+        for ( int i = 6; i >= 0; i--) {
+            System.out.println();
+            for ( int j = i ; j >= 0; j--) {
+                System.out.print("*");
+            }
+        }
+
+
+    }
+
+
+
+
+
 }
 
