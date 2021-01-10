@@ -36,4 +36,6 @@ public class Vet {
     public void describe(){
         System.out.println("Vet names is: " + this.nameV + "-and his specialization is: " + this.specializationV );
     }
+
+
 }

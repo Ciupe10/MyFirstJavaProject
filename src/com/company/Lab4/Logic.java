@@ -34,8 +34,8 @@ public class Logic {
 
 //    count to 100
 
-    public void coutToOneHundred(int startValue) {
-        if (startValue <= 100) {
+    public void countToOneHundred(int startValue) {
+        if (startValue < 100) {
             for (int i = startValue; i <= 100; i++) {
                 System.out.println(i);
             }
@@ -70,13 +70,13 @@ public class Logic {
 //    si sa execute o numaratoare crescatoare de la cel mai mic la cel mai mare.
 //    (ex: daca int x e primul parametru iar int y  este cel de-al doilea, daca x  este mai mare decat y,  atunci numaratoarea sa fie de la y la x).
 
-    public void ascendingCount (int a,int b){
-        if ( a <= b ) {
-            for ( int i = a; i <= b; i++) {
+    public void ascendingCount(int a, int b) {
+        if (a <= b) {
+            for (int i = a; i <= b; i++) {
                 System.out.println(i);
             }
-        }else {
-            for ( int i = b; i <= a; i++) {
+        } else {
+            for (int i = b; i <= a; i++) {
                 System.out.println(i);
             }
         }
@@ -84,10 +84,10 @@ public class Logic {
 
 //5. Creati o metoda in clasa LogicalOp care sa afiseze toate numerele pare de la 1 la 100.
 
-    public void evenNumbers () {
+    public void evenNumbers() {
         int number = 100;
-        for ( int i = 1; i <= number; i++){
-            if (i % 2 == 0){
+        for (int i = 1; i <= number; i++) {
+            if (i % 2 == 0) {
                 System.out.println(i);
             }
         }
@@ -95,9 +95,9 @@ public class Logic {
 
 // 6. Creati o metoda in clasa LogicalOp care sa afiseze toate numerele impare de la 1 la 100.
 
-    public void oddNumbers () {
+    public void oddNumbers() {
         int numbers = 100;
-        for ( int i = 1; i <= numbers; i++) {
+        for (int i = 1; i <= numbers; i++) {
             if (i % 2 != 0) {
                 System.out.println(i);
             }
@@ -109,7 +109,7 @@ public class Logic {
 // pornind de la numarul primit ca si parametru, iar la final sa returneze rezultatul. Apelati metoda in clasa Main, metoda main()
 // pentru a verifica daca functioneaza.
 
-    public int getSum(int first ) {
+    public int getSum(int first) {
         int sum = 0;
         for (int i = first; i <= 100; i++) {
             sum = i + sum;
@@ -121,7 +121,7 @@ public class Logic {
 // pornind de la numarul primit ca si parametru, si sa calculeze media numerelor. La final, metoda sa returneze media.
 // Apelati metoda in clasa Main, metoda main() pentru a verifica daca functioneaza.
 
-    public double getMedia(double first ) {
+    public double getMedia(double first) {
         double rez = 0;
         int j = 0;
 
@@ -132,7 +132,7 @@ public class Logic {
         }
         System.out.println(j);
         System.out.println(rez);
-        double c = rez/j;
+        double c = rez / j;
         return c;
     }
 
@@ -163,20 +163,19 @@ public class Logic {
 //
 //Apelati metoda in clasa Main, metoda main() pentru a verifica daca functioneaza.
 
-    public void asterix () {
+    public void asterix() {
 
-        for ( int i = 6; i >= 0; i--) {
-            System.out.println();
-            for ( int j = i ; j >= 0; j--) {
+        for (int i = 6; i >= 0; i--) {
+            System.out.println("");
+            for (int j = i; j >= 0; j--) {
                 System.out.print("*");
             }
+
+
         }
 
 
     }
-
-
-
 
 
 }

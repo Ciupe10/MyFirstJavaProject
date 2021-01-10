@@ -12,7 +12,7 @@ public class lab4 {
 
 //  Count to onehundred
 
-//        logic.coutToOneHundred(-134);
+//        logic.countToOneHundred(-134);
 
 //  Count to -100
 
@@ -20,7 +20,7 @@ public class lab4 {
 
 //  Count between
 
-//        logic.countBetween(-132,10);
+//        logic.countBetween(16,10);
 
 //  Ascending count
 
@@ -36,11 +36,11 @@ public class lab4 {
 
 //  Sum numbers to 100
 
-//        System.out.println(logic.getSum(22));
+//        System.out.println(logic.getSum(99));
 
 //  Media numbers to 100
 
-//        System.out.println(logic.getMedia(99));
+//        System.out.println(logic.getMedia(88));
 
 
 //   9.Asterix
