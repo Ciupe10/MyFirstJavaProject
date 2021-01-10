@@ -55,9 +55,30 @@ public class Lab5 {
 
 //        6
 
-        int [] numere = IntStream.range(52, 100).toArray();
+//        int [] numere = IntStream.range(52, 100).toArray();
+//
+//        logic.checkNumber(numere,99);
 
-        logic.checkNumber(numere,99);
+
+//
+
+        int[] thirdArray = {1,6,12,24,7,2};
+        int[] emptyArray= new int[thirdArray.length];
+
+//        8.
+
+//        int Value=24;
+//        logic.arrayWithoutValue(thirdArray,Value);
+
+//        9.
+
+//        logic.secondminArray(thirdArray);
+
+
+//       10.
+
+//        logic.copyArray(thirdArray,emptyArray);
+
 
 
     }

@@ -141,6 +141,49 @@ public class Logic {
     }
 
 
+// 10. Creati o metoda care sa primeasca doi parametrii: un array populat cu valori,
+// si un array gol. Metoda sa copieze toate valorile din primul array, parcurgandu-l,
+// in cel de-al doilea. Apelati metoda in main() pentru a verifica daca functioneaza.
+
+    public void copyArray(int[] array1, int[] array2){
+        for(int i=0; i<array1.length;i++){
+            array2[i]=array1[i];
+        }
+        for (int i=0; i<array2.length;i++){
+            System.out.println(array2[i]);
+        }
+    }
+
+//8. Creati o metoda care sa primeasca un parametru de tip array de numere, populat cu valori,
+// si un parametru de tip numar. Metoda sa verifice daca numarul exista in array, si daca da,
+// sa returneze array-ul primit, fara acel numar. Apelati metoda in main() pentru a verifica daca functioneaza.
+
+    public void arrayWithoutValue(int[] array, int doi) {
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] != doi) {
+                System.out.println(array[i]);
+            }
+
+        }
+    }
+
+// 9. Creati o metoda care sa primeasca un array, si sa returneze al doilea cel
+// mai mic numar din array. Apelati metoda in main() pentru a verifica daca functioneaza.
+
+    public void secondminArray(int[] array){
+        int min=10000000;
+        int min2=10000000;
+        for(int i=1;i<array.length; i++){
+            if(array[i]<min){
+                min2=min;
+                min=array[i];
+            }else if(array[i]<min2){
+                min2=array[i];
+            }
+        }
+        System.out.println(min2);
+    }
 
 
 }
