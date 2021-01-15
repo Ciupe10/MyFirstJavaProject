@@ -39,10 +39,15 @@ public class Logic {
 // pornind de la numarul intreg primit ca si parametru.
 
     public void listFromNumber(List<Integer> mylist, int number ) {
+        boolean found = false;
 
-
-        for (int i = number; i < mylist.size(); i++ ) {
-            System.out.println(mylist.get(i));
+        for (int i = 0; i < mylist.size(); i++ ) {
+            if (mylist.get(i) == number) {
+                found = true;
+            }
+            if (found = true) {
+                System.out.println(mylist.get(i));
+            }
         }
     }
 
@@ -77,6 +82,24 @@ public class Logic {
 //  7.Scrieti o metoda Java care sa primeasca parametru o Lista, si sa afiseze ce valori are lista,
 //  si ce pe ce pozitie. (Ex: “Pe pozitia 1 valoare este 4”).
 
+    public void positionAndValue (List<String> aaList) {
+        for (int i = 0 ; i < aaList.size(); i++) {
+            String rezultat = "Pe pozitia " + i + " valoarea este " + aaList.get(i);
+            System.out.println(rezultat);
+        }
+    }
 
+//    8.Scrieti o metoda Java care sa primeasca o Lista si sa returneze cel mai mare numar din ea.
+
+    public int getMaxValue (List<Integer> aList) {
+        int maximum = 0;
+        for (int i = 0; i < aList.size();i++) {
+            if (aList.get(i) > maximum ) {
+                maximum = aList.get(i);
+            }
+        }
+
+        return maximum;
+    }
 
 }

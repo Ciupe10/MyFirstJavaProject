@@ -44,7 +44,7 @@ public class Lab6 {
 
 //        3.
 
-//        logic.listFromNumber(myList,2); neterminat
+//        logic.listFromNumber(myList,4);
 
 
 //          4.
@@ -68,6 +68,13 @@ public class Lab6 {
 
 //        System.out.println(logic.putAStringToFirstPosition(myStringList,"Mario"));
 
+//        7.
+
+//        logic.positionAndValue(myStringList);
+
+//        8.
+
+//        System.out.println(logic.getMaxValue(myList));
 
 
 
