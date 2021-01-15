@@ -43,9 +43,13 @@ public class Logic {
 // daca functioneaza. Atentie, metoda returneaza un array, deci acesta va trebui surprins si afisat folosind o bucla.
 
     public int[] valoriPare(int[] array) {
+        int j = 0;
         for (int i = 1; i <= 100; i++) {
             if (i % 2 == 0) {
                 array[i / 2 - 1] = i;
+//              sau
+                array[j]=i;
+                j++;
 
             }
         }
@@ -132,12 +136,12 @@ public class Logic {
 //    si daca da, atunci sa returneze pozitia pe care se afla numarul.
 //    Apelati metoda in main() pentru a verifica daca functioneaza.
 
-    public void checkNumber (int[] numere, int numar){
+    public int checkNumber (int[] numere, int numar){
       for (int i = 0; i < numere.length; i++) {
           if (numere[i] == numar) {
-              System.out.println(i);
+              return i;
           }
-      }
+      }return -1;
     }
 
 
@@ -145,28 +149,56 @@ public class Logic {
 // si un array gol. Metoda sa copieze toate valorile din primul array, parcurgandu-l,
 // in cel de-al doilea. Apelati metoda in main() pentru a verifica daca functioneaza.
 
-    public void copyArray(int[] array1, int[] array2){
-        for(int i=0; i<array1.length;i++){
-            array2[i]=array1[i];
+    public int[] copyArray(int[] thirdArray, int[] emptyArray) {
+
+
+
+        for (int i = 0, j = 0; i < thirdArray.length; i++) {
+
+            emptyArray[j] = thirdArray[i];
+
+            j++;
+
         }
-        for (int i=0; i<array2.length;i++){
-            System.out.println(array2[i]);
-        }
+
+        return emptyArray;
+
     }
 
 //8. Creati o metoda care sa primeasca un parametru de tip array de numere, populat cu valori,
 // si un parametru de tip numar. Metoda sa verifice daca numarul exista in array, si daca da,
 // sa returneze array-ul primit, fara acel numar. Apelati metoda in main() pentru a verifica daca functioneaza.
 
-    public void arrayWithoutValue(int[] array, int doi) {
 
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] != doi) {
-                System.out.println(array[i]);
+
+    public int[] removeNrFromArray(int[] thirdArray, int Value) {
+
+            int[] secondArray = new int[thirdArray.length];
+
+            int j = 0;
+
+            for (int i = 0; i < thirdArray.length; i++) {
+
+                if (thirdArray[i] == Value)
+
+                    continue;
+
+                secondArray[j++] = thirdArray[i];
+
             }
 
+            int[] finArray = new int[j];
+
+
+
+            for (int i = 0; i < j; i++)
+
+                finArray[i] = secondArray[i];
+
+            return finArray;
+
         }
-    }
+
 
 // 9. Creati o metoda care sa primeasca un array, si sa returneze al doilea cel
 // mai mic numar din array. Apelati metoda in main() pentru a verifica daca functioneaza.

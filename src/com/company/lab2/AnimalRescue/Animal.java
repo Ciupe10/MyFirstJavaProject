@@ -1,6 +1,6 @@
 package com.company.lab2.AnimalRescue;
 
-public class Animal {
+public abstract class Animal {
 
     //animal: nume, vârstă, nivelul stării de sănătate (de la 1 la 10), nivelul senzației de foame (de la 1 la 10),
     // nivelul stării de spirit (de la 1 la 10), numele mâncării preferate, numele activității de recreere preferate
@@ -136,11 +136,7 @@ public class Animal {
         }
     }
 
-    public void eat() {
-        System.out.println("eating");
-    }
+    public abstract void eat();
 
-    public void speaking(){
-        System.out.println("Ahhh");
-    }
+    public abstract void speaking();
 }

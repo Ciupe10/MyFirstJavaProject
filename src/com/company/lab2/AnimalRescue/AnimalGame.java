@@ -11,26 +11,26 @@ public class AnimalGame {
     }
 
     static void createAnimal() {
-//        Animal cat = new Animal("Mitzi", 23, 7, 4,8,"Whiskas", "running");
-//        Animal dog = new Animal();
-//        Animal monkey = new Animal("mimi", 12,8,7,8,"bananas","running");
-//
-//        cat.setHealthy(43);
-//        cat.describe();
-//        dog.describe();
-//
-//        cat.setHungrylevel(13);
-//        cat.setHealthy(7);
-//        cat.setHappines(16);
-//        cat.describe();
-//
-//        dog.setHappines(99);
-//        dog.describe();
-//
-//        monkey.describe();
-//        monkey.setName("Kiti");
-//        monkey.describe();
-//        monkey.getHappines();
+        Cat cat = new Cat ();
+        Dog dog = new Dog() {
+            @Override
+            public void speaking() {
+
+            }
+        };
+
+        cat.setHealthy(43);
+        cat.describe();
+        dog.describe();
+
+        cat.setHungrylevel(13);
+        cat.setHealthy(7);
+        cat.setHappines(16);
+        cat.describe();
+
+        dog.setHappines(99);
+        dog.describe();
+
 
         Cat Mikey = new Cat();
         Mikey.setAge(9);

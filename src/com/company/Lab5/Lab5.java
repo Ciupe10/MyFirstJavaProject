@@ -68,7 +68,7 @@ public class Lab5 {
 //        8.
 
 //        int Value=24;
-//        logic.arrayWithoutValue(thirdArray,Value);
+//        logic.removeNrFromArray(thirdArray,Value);
 
 //        9.
 
