@@ -7,7 +7,7 @@ public class Lab6 {
 
     public static void main(String[] args) {
 
-        Logic logic = new Logic();
+        Logic6 logic6 = new Logic6();
         List<Integer> myList = new ArrayList<>();
 
         myList.add(1);
