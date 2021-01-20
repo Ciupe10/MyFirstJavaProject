@@ -1,8 +1,6 @@
 package com.company.Lab7;
 
-import com.company.Lab5.Logic;
-import com.company.Lab6.Lab6;
-import com.company.Lab6.Logic6;
+import com.company.Lab5.Logic5;
 
 public class Lab7 {
 
@@ -30,7 +28,7 @@ public class Lab7 {
 
 //        3.
 
-        Logic logic = new com.company.Lab5.Logic();
+        Logic5 logic5 = new Logic5();
 //        int[] result = read.arrayFromKeyboard(5);
 //        logic.printArray(result);
 
@@ -38,6 +36,12 @@ public class Lab7 {
 
 //        Logic6 logic6 = new Logic6();
 //        logic6.printList(read.getNumbersFromKeyboard());
+
+//        5.
+
+        Logic7 logic7 = new Logic7();
+       int[] array = {3,4,56,3};
+
 
 
 

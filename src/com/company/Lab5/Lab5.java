@@ -1,12 +1,10 @@
 package com.company.Lab5;
 
-import java.util.stream.IntStream;
-
 public class Lab5 {
 
     public static void main(String[] args) {
 
-        Logic logic = new Logic();
+        Logic5 logic5 = new Logic5();
 
 //
 //        int[] myArray = logic.setConsecutiveValuesToArray(1,100);

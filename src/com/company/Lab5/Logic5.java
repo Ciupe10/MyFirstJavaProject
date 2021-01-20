@@ -2,7 +2,7 @@ package com.company.Lab5;
 
 import java.util.Arrays;
 
-public class Logic {
+public class Logic5 {
 
     public void printArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
